@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tourist App Home</title>
+    <style>
+        body {
+            
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            color: white;
+            background: url("{{ url_for('static', filename='images/home_background.webp') }}");
+            background-size: cover;
+            background-size: contain;
+        }
+
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.5); /* dark overlay for readability */
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin-bottom: 40px;
+            font-style: italic;
+        }
+
+        .search-bar {
+            background: white;
+            padding: 10px;
+            border-radius: 8px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 300px;
+            border: none;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        button {
+            padding: 10px 15px;
+            margin-left: 10px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: navy;
+        }
+        h1 {
+    font-size: 32px;          /* smaller size */
+    font-weight: bold;
+    color: #FFD700;           /* golden yellow for warmth */
+    text-shadow: 1px 1px 4px rgba(0,0,0,0.6); /* adds contrast */
+    margin-bottom: 20px;
+}
+    </style>
+</head>
+<body>
+    <div class="overlay">
+    <h1>Discover the soul of India with WanderIndia.</h1>
+    <p>"Jobs fill your pockets, but adventures fill your soul."</p>
+
+    <form action="/search" method="GET" class="search-bar">
+        <input list="cities" name="city" placeholder="Search a city...">
+        <button type="submit">Search</button>
+    </form>
+
+    <datalist id="cities">
+        <option value="Agra">
+        <option value="Delhi">
+        <option value="Goa">
+        <option value="Varanasi">
+        <option value="Bangalore">
+        <option value="Chennai">
+        <option value="Mumbai">
+        <option value="Kolkata">
+        <option value="Hyderabad">
+        <option value="Jaipur">
+    </datalist>
+</div>
+</body>
+</html>

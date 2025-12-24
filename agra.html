@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Agra Tourist Places</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Famous Places in Agra</h1>
+    <div class="city-nickname">
+    <div>The</div>
+    <div>City</div>
+    <div>of</div>
+    <div>the</div>
+    <div>Taj</div>
+</div>
+
+    <!-- Taj Mahal -->
+    <div class="place">
+        <h2>Taj Mahal</h2>
+    <img src="{{ url_for('static', filename='images/tajmahal.webp') }}" alt="Taj Mahal" width="500">
+    <p>The crown jewel of Mughal architecture, built by Shah Jahan in memory of Mumtaz Mahal.</p>
+    </div>
+
+    <!-- Agra Fort -->
+    <div class="place">
+        <h2>Agra Fort</h2>
+    <img src="{{ url_for('static', filename='images/agrafort.webp') }}" alt="Agra Fort" width="500">
+    <p>A UNESCO World Heritage site, this red sandstone fort was the main residence of Mughal emperors.</p>
+</div>
+    <!-- Mehtab Bagh -->
+    <div class="place">
+        <h2>Mehtab Bagh</h2>
+    <img src="{{ url_for('static', filename='images/mehtabbagh.jpg') }}" alt="Mehtab Bagh" width="500">
+    <p>A beautiful garden across the Yamuna River, offering stunning views of the Taj Mahal at sunset.</p>
+    </div>
+
+    <!-- Itimad-ud-Daulah’s Tomb -->
+    <div class="place">
+        <h2>Itimad-ud-Daulah’s Tomb</h2>
+    <img src="{{ url_for('static', filename='images/itimad_ud_daulah.jpg') }}" alt="Itimad-ud-Daulah’s Tomb" width="500">
+    <p>Often called the “Baby Taj,” this tomb is known for its intricate marble inlay work.</p>
+    </div>
+
+    <!-- Akbar’s Tomb -->
+    <div class="place">
+        <h2>Akbar’s Tomb</h2>
+    <img src="{{ url_for('static', filename='images/akbartomb.jpg') }}" alt="Akbar’s Tomb" width="500">
+    <p>Located in Sikandra, this mausoleum reflects Mughal architecture and grandeur.</p>
+
+    </div>
+    <!-- Fatehpur Sikri -->
+    <div class="place">
+        <h2>Fatehpur Sikri</h2>
+    <img src="{{ url_for('static', filename='images/fatehpursikri.jpg') }}" alt="Fatehpur Sikri" width="500">
+    <p>The former Mughal capital built by Akbar, famous for Buland Darwaza and Jama Masjid.</p>
+    </div>
+
+    <a class="home-link" href="/">Back to Home</a>
+</body>
+</html>

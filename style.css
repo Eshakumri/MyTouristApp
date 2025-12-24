@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    text-align: center;   /* centers all content */
+}
+
+h1 {
+    color: darkblue;
+}
+
+img {
+    margin: 20px;
+    border: 3px solid #333;
+    border-radius: 8px;
+    width: 500px;         /* fixed width for consistency */
+}
+
+a {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    color: darkred;
+    font-weight: bold;
+}
+body {
+  background: url("/static/images/web_bkg.webp") no-repeat center center fixed;
+  background-size: cover;
+}
+.home-link {
+    position: fixed;   /* fixes it in place */
+    top: 20px;            /* distance from top */
+    right: 20px;          /* distance from right */
+    text-decoration: none;
+    color: white;         /* link color */
+    background-color: #007BFF; /* blue button style */
+    padding: 8px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.home-link:hover {
+    background-color: #0056b3; /* darker blue on hover */
+    color: #fff;
+}
+.city-nickname {
+    position: fixed;       /* stays visible while scrolling */
+    top: 30%;              /* adjust vertical position */
+    right: 40px;           /* distance from right edge */
+    font-size: 56px;       /* big bold text */
+    font-weight: 900;
+    color: #222;           /* dark color */
+    line-height: 1.2;      /* spacing between rows */
+    text-align: right;     /* align words to the right edge */
+    opacity: 0.3;          /* subtle watermark effect */
+    z-index: 500;
+    pointer-events: none;  /* avoids blocking clicks */
+}
